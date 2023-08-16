@@ -10,4 +10,7 @@ Landsat repo: https://landsat.usgs.gov
 ## Infraestructura planeada
 
 Teniendo en cuenta la necesidad de ejecución diaria, se plantea una configuración con AWS Lambda, con un trigger "on a 
-schedule", haciendo llamado de los servicios de 
+schedule", haciendo llamado de los servicios de la aplicación.
+
+Se usó Docker como herramienta de contenerización, para usarlo por facilidad para configurar Lambda. Los llamados serían
+todos los días a media noche, para así facilitar la ejecución.
